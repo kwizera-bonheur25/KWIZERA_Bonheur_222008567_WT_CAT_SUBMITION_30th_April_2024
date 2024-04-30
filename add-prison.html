@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin dashboard</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=open+sans">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <style>
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 550px;
+            margin-left: 25%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    </head>
+    <body>
+    <form action="../add-prison.php" method="post">
+        <label for="prison_name">Prison Name:</label>
+        <input type="text" id="prison_name" name="prison_name" required>
+        <br>
+        <label for="prison_district">District:</label>
+        <input type="text" id="prison_district" name="prison_district" required>
+        <br>
+        <label for="prison_sector">Sector:</label>
+        <input type="text" id="prison_sector" name="prison_sector" required>
+        <br>
+        <input type="submit" value="Add Prison">
+    </form>
+        </div>
+    </body>
+</html>

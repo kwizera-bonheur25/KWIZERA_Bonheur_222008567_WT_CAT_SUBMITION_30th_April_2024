@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" type="text/css" href="signup-styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign-Up</h2>
+        <form action="signup.php" method="POST" id="signUpForm">
+            <div style="background-color: red; color: white;" id="error"></div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="id_number">ID Number</label>
+            <input type="text" id="id_number" name="id_number" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="marital_status">Marital Status</label>
+            <select id="marital_status" name="marital_status">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" onclick="validateForm()" name="signup" value="Sign Up">
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
